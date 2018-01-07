@@ -1,0 +1,8 @@
+{
+  "name": "TickingTime",
+  "app_id": "d0a1e234",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
