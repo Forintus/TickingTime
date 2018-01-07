@@ -5,6 +5,14 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
+@font-face {
+  font-family: 'San Francisco';
+  font-style: ultralight;
+  font-weight: 300;
+  src: url('../assets/fonts/sanfrancisco/HelveticaNeueDeskInterface-UltraLightP2.woff') format('woff');
+}
+
+$font-family-base: "San Francisco", sans-serif !default;
 
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
@@ -41,6 +49,12 @@ $colors: (
   dark:       #222
 );
 
+$background-color: color($colors, dark, base);
+
+* {
+  font-weight: 300 !important;
+  color: color($colors, light, base) !important;
+}
 
 // App iOS Variables
 // --------------------------------------------------
@@ -78,11 +92,11 @@ $colors: (
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
-@import "ionic.ionicons";
+// @import "ionic.ionicons";
 
 
 // Fonts
 // --------------------------------------------------
 
-@import "roboto";
-@import "noto-sans";
+// @import "roboto";
+// @import "noto-sans";
